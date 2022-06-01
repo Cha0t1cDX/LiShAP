@@ -1,3 +1,74 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Audio player HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/AudioPlayer.css">
+    <style>
+
+    #player{
+        position: relative;
+        max-width: 700px;
+        height: 500px;
+        border: solid 1px gray;
+    }
+    </style>
+  </head>
+
+  <body>
+      <!-- Audio player container-->
+     <div id='player'></div>
+
+    <!-- Audio player js begin-->
+    <script src="js/AudioPlayer.js"></script>
+
+    <script>
+        // test image for web notifications
+        var iconImage = null;
+
+        AP.init({
+            container:'#player',//a string containing one CSS selector
+            volume   : 0.7,
+            autoPlay : true,
+            notification: false,
+            playList: [
+                {'icon': iconImage, 'title': 'Battle for a coffee', 'file': 'mp3/Battle for a coffee.mp3'},
+                {'icon': iconImage, 'title': 'Battle Tower!', 'file': 'mp3/Battle Tower!.wav'}
+		{'icon': iconImage, 'title': 'Battle in Ultra space!', 'file': 'mp3/Battle in Ultra space!.wav'}
+		{'icon': iconImage, 'title': 'Eavesdropping', 'file': 'mp3/Eavesdropping (Ty).mp3'}
+		{'icon': iconImage, 'title': 'Forgotten History', 'file': 'mp3/Forgotten History.mp3'}
+		{'icon': iconImage, 'title': 'Home', 'file': 'mp3/Home.mp3'}
+		{'icon': iconImage, 'title': 'Hotel Room', 'file': 'mp3/Hotel Room.mp3'}
+		{'icon': iconImage, 'title': 'Lets Take a walk.', 'file': 'mp3/Let's Take a walk. (-WT-).mp3'}
+		{'icon': iconImage, 'title': 'Lobby.mp3', 'file': 'mp3/Lobby.mp3'}
+		{'icon': iconImage, 'title': 'Moon Festival!', 'file': 'mp3/Moon Festival!.mp3'}
+		{'icon': iconImage, 'title': 'Old Capitol', 'file': 'mp3/Old Capitol (Ty).mp3'}
+		{'icon': iconImage, 'title': 'Old Capitol Market', 'file': 'mp3/Old Capitol Market (Ty).mp3'}
+		{'icon': iconImage, 'title': 'Optimal', 'file': 'mp3/Optimal (-WT-).wav'}
+		{'icon': iconImage, 'title': 'Requiem Base', 'file': 'mp3/Requiem Base (Ty).mp3'}
+		{'icon': iconImage, 'title': 'Respite', 'file': 'mp3/Respite (Ty).mp3'}
+		{'icon': iconImage, 'title': 'Resurrection', 'file': 'mp3/Resurrection (Ty).mp3'}
+		{'icon': iconImage, 'title': 'Shadows Rise', 'file': 'mp3/Shadows Rise (Mimi).mp3'}
+		{'icon': iconImage, 'title': 'Thanks to everyone!', 'file': 'mp3/Thanks to everyone! (-WT-).mp3'}
+		{'icon': iconImage, 'title': 'Ub Charge Forward', 'file': 'mp3/Ub Charge Forward (-WT-)).mp3'}
+		{'icon': iconImage, 'title': 'Ultra Megalopolis', 'file': 'mp3/Ultra Megalopolis (Ty).mp3'}
+		{'icon': iconImage, 'title': 'Ultra Megalopolis Shop', 'file': 'mp3/Ultra Megalopolis Shop (Ty).mp3'}
+		{'icon': iconImage, 'title': 'Victory Road Sea', 'file': 'mp3/Victory Road_ Sea.mp3'}
+		{'icon': iconImage, 'title': 'Vs Rival Kohaku', 'file': 'mp3/Vs Rival Kohaku.mp3'}
+		{'icon': iconImage, 'title': 'Vs Rival Yoshiro', 'file': 'mp3/Vs Rival Yoshiro.mp3'}
+		{'icon': iconImage, 'title': 'dead space', 'file': 'mp3/dead space.wav'}
+		{'icon': iconImage, 'title': 'ruins of alph!', 'file': 'mp3/ruins of alph (a) (tyguy).mp3'}
+		{'icon': iconImage, 'title': 'ruins of alph?', 'file': 'mp3/ruins of alph (b) (tyguy).mp3'}
+          ]
+        });
+    </script>
+    <!-- Audio player js end-->
+
+  </body>
+</html>
 ;(function(window, undefined) {
 
 'use strict';
