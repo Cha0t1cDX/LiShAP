@@ -69,7 +69,6 @@
 
   </body>
 </html>
-AP.init
 ;(function(window, undefined) {
 
 'use strict';
